@@ -1,0 +1,36 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import { Image } from 'astro:assets';
+import moodboardSvg from "./moodboard.svg"
+---
+
+<Layout title="Kew Gardens">
+  <main>
+    <h1 class="text-5xl font-semibold leading-none text-center mt-4 mb-8">
+      Kew Gardens
+    </h1>
+    <i>This project is a work in progress.</i>
+
+    <div class="mt-2">
+      <h2 class="text-3xl font-medium mb-4">The Brief</h2>
+      <div class="space-y-4 mb-4">
+        <p>
+          The client, "The Gardens at Kew" requires graphics to promote and
+          celebrate "184 years at Kew". You are to produce a poster that
+          advertises and celebrates this.
+        </p>
+        <p>
+          When making your response, refer to appropriate contextual material by
+          choosing one of these artists' work to help inform your style:
+        </p>
+        <ul class="list-disc list-inside">
+          <li>Bradbury Thompson</li>
+          <li>Julia Allum</li>
+          <li>Caitlin Parks</li>
+        </ul>
+      </div>
+      <h2 class="text-3xl font-medium mb-4">Moodboard</h2>
+      <Image src={moodboardSvg} alt="My Kew Gardens poster moodboard"/>
+    </div>
+  </main>
+</Layout>
